@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0; /* Remove default margins */
+            padding: 0; /* Remove default padding */
+            background-color: #121212; /* Dark background */
+            color: #FFFFFF; /* Light text color */
+            font-family: Arial, sans-serif;
+            height: 50vh; /* Full height of viewport */
+            width: 100vw; /* Full width of viewport */
+            display: flex;
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+        }
+
+        .container {
+            display: grid; /* Use grid layout */
+            grid-template-columns: repeat(3, minmax(100px, 1fr)); /* Equal width with min/max */
+            grid-gap: 10px; /* Gap between buttons */
+            width: 100%; /* Fill the full width */
+            height: 100%; /* Fill the full height */
+            padding: 20px; /* Padding for the container */
+            box-sizing: border-box; /* Ensure padding doesn't affect layout */
+        }
+
+        .app-button {
+            background-color: #1c1c1c; /* Dark button background */
+            color: #FFFFFF;
+            padding: 40px; /* Padding for larger text and icons */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 72px; /* Larger font size */
+            text-align: center; /* Align text to center */
+            display: flex;
+            justify-content: center; /* Center text horizontally */
+            align-items: center; /* Center text vertically */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Subtle shadow */
+            transition: all 0.3s; /* Smooth transition for hover effects */
+            white-space: nowrap; /* Avoid text wrapping */
+        }
+
+        .app-button i {
+            margin-right: 10px; /* Space between icon and text */
+        }
+
+        .app-button:hover {
+            background-color: #333; /* Change background on hover */
+            transform: translateY(-2px); /* Small lift on hover */
+            box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3); /* Deeper shadow */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="https://groq.com" class="app-button"><i class="fas fa-microchip"></i></a>
+        <a href="https://chatgpt.com" class="app-button"><i class="fas fa-robot"></i></a>
+        <a href="https://www.bing.com/chat" class="app-button"><i class="fas fa-comments"></i></a>
+        <a href="https://gemini.google.com/app" class="app-button"><i class="fas fa-star"></i></a>
+        <a href="https://claude.ai/chats" class="app-button"><i class="fas fa-brain"></i></a>
+        <a href="https://coral.cohere.com" class="app-button"><i class="fas fa-network-wired"></i></a>
+        <a href="https://chat.reka.ai/chat" class="app-button"><i class="fas fa-code"></i></a>
+        <a href="https://openrouter.ai/playground" class="app-button"><i class="fas fa-layer-group"></i></a>
+        <a href="https://chat.mistral.ai/chat" class="app-button"><i class="fas fa-wind"></i></a>
+    </div>
+</body>
+</html>
